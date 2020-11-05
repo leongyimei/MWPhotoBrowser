@@ -271,8 +271,17 @@
     }
     
     // Image is smaller than screen so no zooming!
-    if (xScale >= 1 && yScale >= 1) {
-        minScale = 1.0;
+    if (_photoBrowser.zoomSmallPhotos) {
+        if (xScale >= 3 && yScale >= 3) {
+            minScale = 3;
+        }
+        if (maxScale <= minScale)
+            maxScale = minScale +2;
+    }else{
+        // Image is smaller than screen so no zooming!
+        if (xScale >= 1 && yScale >= 1) {
+            minScale = 1;
+        }
     }
     
     // Set min/max zoom

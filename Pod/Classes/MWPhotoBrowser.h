@@ -45,6 +45,7 @@
 @property (nonatomic) BOOL displayNavArrows;
 @property (nonatomic) BOOL displayActionButton;
 @property (nonatomic) BOOL displaySelectionButtons;
+@property (nonatomic) BOOL zoomSmallPhotos;
 @property (nonatomic) BOOL alwaysShowControls;
 @property (nonatomic) BOOL enableGrid;
 @property (nonatomic) BOOL enableSwipeToDismiss;
